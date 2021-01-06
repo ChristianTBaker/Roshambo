@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		ED2C270225A5681E003E8E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C270125A5681E003E8E41 /* AppDelegate.swift */; };
 		ED2C270425A5681E003E8E41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C270325A5681E003E8E41 /* SceneDelegate.swift */; };
-		ED2C270625A5681E003E8E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C270525A5681E003E8E41 /* ViewController.swift */; };
+		ED2C270625A5681E003E8E41 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C270525A5681E003E8E41 /* MainPageViewController.swift */; };
 		ED2C270925A5681E003E8E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2C270725A5681E003E8E41 /* Main.storyboard */; };
 		ED2C270B25A5681F003E8E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2C270A25A5681F003E8E41 /* Assets.xcassets */; };
 		ED2C270E25A5681F003E8E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2C270C25A5681F003E8E41 /* LaunchScreen.storyboard */; };
+		ED2C271825A56A79003E8E41 /* RoshamboOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C271725A56A79003E8E41 /* RoshamboOptions.swift */; };
+		ED2C271E25A57002003E8E41 /* RockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C271D25A57002003E8E41 /* RockViewController.swift */; };
+		ED2C272125A570F1003E8E41 /* GameFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272025A570F1003E8E41 /* GameFunctions.swift */; };
+		ED2C272425A572F2003E8E41 /* GameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272325A572F2003E8E41 /* GameResults.swift */; };
+		ED2C272725A58337003E8E41 /* PaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272625A58337003E8E41 /* PaperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED2C26FE25A5681E003E8E41 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2C270125A5681E003E8E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED2C270325A5681E003E8E41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED2C270525A5681E003E8E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED2C270525A5681E003E8E41 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		ED2C270825A5681E003E8E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED2C270A25A5681F003E8E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED2C270D25A5681F003E8E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2C270F25A5681F003E8E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2C271725A56A79003E8E41 /* RoshamboOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboOptions.swift; sourceTree = "<group>"; };
+		ED2C271D25A57002003E8E41 /* RockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockViewController.swift; sourceTree = "<group>"; };
+		ED2C272025A570F1003E8E41 /* GameFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFunctions.swift; sourceTree = "<group>"; };
+		ED2C272325A572F2003E8E41 /* GameResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResults.swift; sourceTree = "<group>"; };
+		ED2C272625A58337003E8E41 /* PaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,28 @@
 		ED2C270025A5681E003E8E41 /* Roshambo */ = {
 			isa = PBXGroup;
 			children = (
+				ED2C271625A56A52003E8E41 /* Enums */,
 				ED2C270125A5681E003E8E41 /* AppDelegate.swift */,
 				ED2C270325A5681E003E8E41 /* SceneDelegate.swift */,
-				ED2C270525A5681E003E8E41 /* ViewController.swift */,
+				ED2C270525A5681E003E8E41 /* MainPageViewController.swift */,
 				ED2C270725A5681E003E8E41 /* Main.storyboard */,
+				ED2C272625A58337003E8E41 /* PaperViewController.swift */,
+				ED2C271D25A57002003E8E41 /* RockViewController.swift */,
 				ED2C270A25A5681F003E8E41 /* Assets.xcassets */,
 				ED2C270C25A5681F003E8E41 /* LaunchScreen.storyboard */,
 				ED2C270F25A5681F003E8E41 /* Info.plist */,
+				ED2C272025A570F1003E8E41 /* GameFunctions.swift */,
 			);
 			path = Roshambo;
+			sourceTree = "<group>";
+		};
+		ED2C271625A56A52003E8E41 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C271725A56A79003E8E41 /* RoshamboOptions.swift */,
+				ED2C272325A572F2003E8E41 /* GameResults.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2C270625A5681E003E8E41 /* ViewController.swift in Sources */,
+				ED2C271825A56A79003E8E41 /* RoshamboOptions.swift in Sources */,
+				ED2C271E25A57002003E8E41 /* RockViewController.swift in Sources */,
+				ED2C270625A5681E003E8E41 /* MainPageViewController.swift in Sources */,
+				ED2C272725A58337003E8E41 /* PaperViewController.swift in Sources */,
 				ED2C270225A5681E003E8E41 /* AppDelegate.swift in Sources */,
+				ED2C272425A572F2003E8E41 /* GameResults.swift in Sources */,
 				ED2C270425A5681E003E8E41 /* SceneDelegate.swift in Sources */,
+				ED2C272125A570F1003E8E41 /* GameFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
