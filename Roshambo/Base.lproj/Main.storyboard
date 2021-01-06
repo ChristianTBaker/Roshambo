@@ -41,6 +41,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Q9F-b9-5pS"/>
                                 </constraints>
                                 <state key="normal" title="Scissors" image="scissors"/>
+                                <connections>
+                                    <segue destination="xt6-xZ-hf4" kind="presentation" id="4oC-3s-d50"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U0-BO-9n0">
                                 <rect key="frame" x="170" y="127" width="74" height="71"/>
@@ -177,6 +180,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1e-IR-lel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1389.8550724637682" y="95.758928571428569"/>
+        </scene>
+        <!--Scissors View Controller-->
+        <scene sceneID="NAP-e9-hlI">
+            <objects>
+                <viewController id="xt6-xZ-hf4" customClass="ScissorsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OgC-hd-LJo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aor-iL-SQM">
+                                <rect key="frame" x="20" y="443" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0B-ax-ljF">
+                                <rect key="frame" x="168.5" y="678" width="77" height="30"/>
+                                <state key="normal" title="Play again?"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="xt6-xZ-hf4" eventType="touchUpInside" id="Rig-Bm-ym6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXk-sq-5Oc">
+                                <rect key="frame" x="87" y="80" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1pT-H8-mmJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ogo-HI-jax"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IXk-sq-5Oc" firstAttribute="leading" secondItem="Ogo-HI-jax" secondAttribute="leading" constant="87" id="1iq-pS-E2Y"/>
+                            <constraint firstItem="aor-iL-SQM" firstAttribute="centerX" secondItem="Ogo-HI-jax" secondAttribute="centerX" id="2N2-vH-4EE"/>
+                            <constraint firstItem="aor-iL-SQM" firstAttribute="centerY" secondItem="Ogo-HI-jax" secondAttribute="centerY" id="2Ze-Ad-Amp"/>
+                            <constraint firstItem="IXk-sq-5Oc" firstAttribute="centerX" secondItem="Ogo-HI-jax" secondAttribute="centerX" id="Oeh-L6-NKm"/>
+                            <constraint firstItem="IXk-sq-5Oc" firstAttribute="top" secondItem="Ogo-HI-jax" secondAttribute="top" constant="80" id="TqJ-Xx-XjM"/>
+                            <constraint firstItem="Ogo-HI-jax" firstAttribute="bottom" secondItem="B0B-ax-ljF" secondAttribute="bottom" constant="100" id="cT3-Le-DSL"/>
+                            <constraint firstItem="B0B-ax-ljF" firstAttribute="centerX" secondItem="Ogo-HI-jax" secondAttribute="centerX" id="sHH-6I-T4a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameResultImage" destination="IXk-sq-5Oc" id="mKu-jA-vnQ"/>
+                        <outlet property="gameResultLabel" destination="aor-iL-SQM" id="UBi-CD-hes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqH-5v-PWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="774.77678571428567"/>
         </scene>
     </scenes>
     <resources>

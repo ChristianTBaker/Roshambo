@@ -18,6 +18,7 @@
 		ED2C272125A570F1003E8E41 /* GameFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272025A570F1003E8E41 /* GameFunctions.swift */; };
 		ED2C272425A572F2003E8E41 /* GameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272325A572F2003E8E41 /* GameResults.swift */; };
 		ED2C272725A58337003E8E41 /* PaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272625A58337003E8E41 /* PaperViewController.swift */; };
+		ED2C272A25A58786003E8E41 /* ScissorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C272925A58786003E8E41 /* ScissorsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		ED2C272025A570F1003E8E41 /* GameFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFunctions.swift; sourceTree = "<group>"; };
 		ED2C272325A572F2003E8E41 /* GameResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResults.swift; sourceTree = "<group>"; };
 		ED2C272625A58337003E8E41 /* PaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperViewController.swift; sourceTree = "<group>"; };
+		ED2C272925A58786003E8E41 /* ScissorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +68,11 @@
 		ED2C270025A5681E003E8E41 /* Roshambo */ = {
 			isa = PBXGroup;
 			children = (
+				ED2C272C25A5878F003E8E41 /* ViewControllers */,
 				ED2C271625A56A52003E8E41 /* Enums */,
 				ED2C270125A5681E003E8E41 /* AppDelegate.swift */,
 				ED2C270325A5681E003E8E41 /* SceneDelegate.swift */,
-				ED2C270525A5681E003E8E41 /* MainPageViewController.swift */,
 				ED2C270725A5681E003E8E41 /* Main.storyboard */,
-				ED2C272625A58337003E8E41 /* PaperViewController.swift */,
-				ED2C271D25A57002003E8E41 /* RockViewController.swift */,
 				ED2C270A25A5681F003E8E41 /* Assets.xcassets */,
 				ED2C270C25A5681F003E8E41 /* LaunchScreen.storyboard */,
 				ED2C270F25A5681F003E8E41 /* Info.plist */,
@@ -88,6 +88,17 @@
 				ED2C272325A572F2003E8E41 /* GameResults.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		ED2C272C25A5878F003E8E41 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C270525A5681E003E8E41 /* MainPageViewController.swift */,
+				ED2C272625A58337003E8E41 /* PaperViewController.swift */,
+				ED2C272925A58786003E8E41 /* ScissorsViewController.swift */,
+				ED2C271D25A57002003E8E41 /* RockViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				ED2C272725A58337003E8E41 /* PaperViewController.swift in Sources */,
 				ED2C270225A5681E003E8E41 /* AppDelegate.swift in Sources */,
 				ED2C272425A572F2003E8E41 /* GameResults.swift in Sources */,
+				ED2C272A25A58786003E8E41 /* ScissorsViewController.swift in Sources */,
 				ED2C270425A5681E003E8E41 /* SceneDelegate.swift in Sources */,
 				ED2C272125A570F1003E8E41 /* GameFunctions.swift in Sources */,
 			);
